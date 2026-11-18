@@ -119,7 +119,10 @@ export const CardPage = ({ data, setData, extraClass = "" }) => {
         {data.name}
       </p>
       <p className={`text text_type_h3 text_color_secondary ${styles.date}`}>
-        {data.birth_year}
+        Возраст: {data.age}
+      </p>
+      <p className={`text text_type_h3 text_color_secondary ${styles.date}`}>
+        Хозяин: {data.owner_name}
       </p>
       <div
         className={styles.cat_color_box}
@@ -135,5 +138,5 @@ export const CardPage = ({ data, setData, extraClass = "" }) => {
         {achievements}
       </p>
     </article>
-  );
+  )
 };
